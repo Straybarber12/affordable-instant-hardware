@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: affordable-instant-hardware
+    runtime: static
+    staticPublishPath: ./
+    autoDeploy: true
