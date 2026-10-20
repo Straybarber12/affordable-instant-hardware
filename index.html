@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#123b2f" />
+  <meta name="description" content="Affordable & Instant Hardware is an online hardware supply and sourcing service helping customers find building materials, tools, plumbing and electrical supplies at competitive prices." />
+  <title>Affordable & Instant Hardware — Affordable supplies. Fast sourcing.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Affordable & Instant Hardware • Online hardware supplies <span class="announcement-separator">•</span> Made for Zimbabwe</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Affordable & Instant Hardware home">
+      <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 18.5 20 7l15 11.5v15H5z"/><path d="M14 33V21h12v12M3 18l17-13 17 13"/></svg></span>
+      <span class="brand-copy"><strong>Affordable <span>&amp; Instant</span></strong><small>HARDWARE SUPPLIES • AFFORDABLE SOURCING</small></span>
+    </a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+    <nav class="main-nav" id="mainNav"><a href="#products">Products</a><a href="#how-it-works">How it works</a><a href="#sourcing">AI sourcing</a></nav>
+    <div class="header-actions"><button class="icon-button" id="searchFocus" aria-label="Search products"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button><button class="cart-button" id="openCart"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 9H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg><span>My list</span><b id="cartCount">0</b></button></div>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-icon">✦</span> A smarter way to build</div>
+        <h1>Build your vision.<br><em>Not your expenses.</em></h1>
+        <p class="hero-lead">Find the materials you need, plan your budget and get help sourcing the right products — all in one place.</p>
+        <div class="hero-search" id="heroSearch"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="searchInput" type="search" placeholder="What are you looking for today?" aria-label="Search building materials"><button id="searchButton">Search <span>→</span></button></div>
+        <div class="hero-hints"><span>Popular:</span><button data-search="Paint">Paint</button><i></i><button data-search="Plumbing">Plumbing</button><i></i><button data-search="Power tools">Power tools</button></div>
+        <div class="hero-trust"><div class="avatar-stack"><span>JM</span><span>TK</span><span>+ </span></div><p><strong>Built around your budget</strong><br><small>Smart sourcing. Clear quotes. Less guesswork.</small></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo"><img src="hero-warehouse.png" alt="Professional Affordable & Instant Hardware stockroom with organised shelves of building supplies and a small customer service desk with desktop computer"><div class="photo-shade"></div><div class="photo-label"><span class="live-dot"></span> YOUR HARDWARE, SOURCED SMARTER</div></div>
+        <div class="floating-card budget-card"><div class="float-icon green-icon">↗</div><div><small>Smart budget planning</small><strong>Make every dollar count</strong></div><span class="sparkline">⌁</span></div>
+        <div class="floating-card ai-card"><div class="ai-orb">✦</div><div><strong>Meet Tendai AI</strong><small>Your personal sourcing assistant</small></div><span class="online-dot"></span></div>
+        <div class="hero-stamp"><span>PLAN</span><b>+</b><span>SOURCE</span><b>+</b><span>BUILD</span></div>
+      </div>
+    </section>
+
+    <section class="benefit-strip section-wrap" aria-label="Benefits"><div><span class="benefit-icon">⌕</span><p><strong>Find the right fit</strong><small>Products for your project</small></p></div><div><span class="benefit-icon">▤</span><p><strong>Compare the real cost</strong><small>Include delivery and extras</small></p></div><div><span class="benefit-icon">✦</span><p><strong>Get AI guidance</strong><small>Make informed decisions</small></p></div><div><span class="benefit-icon">✓</span><p><strong>Request a quote</strong><small>Confirm before you buy</small></p></div></section>
+
+    <section class="section-wrap categories-section" id="products">
+      <div class="section-heading"><div><div class="eyebrow">SHOP BY CATEGORY</div><h2>What are you working on?</h2><p>Start with a category or search for a specific item.</p></div><a class="text-link" href="#productGrid">Explore all products <span>→</span></a></div>
+      <div class="category-grid">
+        <button class="category-card active" data-category="All"><span class="category-symbol">▦</span><span><strong>All products</strong><small>Browse everything</small></span><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Building"><span class="category-symbol">▤</span><span><strong>Building materials</strong><small>Cement, blocks & more</small></span><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Paint"><span class="category-symbol">◒</span><span><strong>Paint & finishes</strong><small>Colour your space</small></span><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Plumbing"><span class="category-symbol">⌁</span><span><strong>Plumbing</strong><small>Fittings & pipework</small></span><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Electrical"><span class="category-symbol">ϟ</span><span><strong>Electrical</strong><small>Power & lighting</small></span><span class="category-arrow">↗</span></button>
+        <button class="category-card" data-category="Tools"><span class="category-symbol">⚒</span><span><strong>Tools & hardware</strong><small>Ready for the job</small></span><span class="category-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="section-wrap products-section" id="productGrid">
+      <div class="section-heading product-heading"><div><div class="eyebrow">A FEW PLACES TO START</div><h2>Popular picks</h2><p>Sample listings to demonstrate the store. Prices are illustrative, not supplier quotes.</p></div><div class="product-controls"><label class="sort-label" for="sortSelect">Sort by</label><select id="sortSelect"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div></div>
+      <div class="active-filter-row"><span id="resultCount">Showing 8 products</span><span class="sample-note"><span class="tiny-dot"></span> Demo catalogue</span></div>
+      <div class="product-grid" id="productsList"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No products found</h3><p>Try another search or ask Tendai AI to help source it.</p><button class="button button-outline" id="clearFilters">Clear filters</button></div>
+      <div class="custom-request"><div class="request-icon">✦</div><div><h3>Can't find what you need?</h3><p>Tell us what your project needs and we'll help you prepare a sourcing request.</p></div><button class="button button-dark" id="customRequestBtn">Request a custom quote <span>→</span></button></div>
+    </section>
+
+    <section class="ai-feature" id="sourcing"><div class="section-wrap ai-feature-inner"><div class="ai-feature-copy"><div class="eyebrow light-eyebrow"><span>✦</span> THE AFFORDABLE & INSTANT ADVANTAGE</div><h2>Not sure what you need?<br><em>Just ask Tendai.</em></h2><p>Describe your project in your own words. Tendai helps you organise your list, think through your budget and prepare the right questions for suppliers.</p><ul><li><span>✓</span> Turn a project idea into a materials checklist</li><li><span>✓</span> Explore options that fit your budget</li><li><span>✓</span> Prepare a clear request for supplier quotes</li></ul><button class="button button-lime" id="startAi">Talk to Tendai AI <span>↗</span></button><small class="ai-disclaimer">AI suggestions are a starting point. Verify measurements, specifications and prices before buying.</small></div><div class="assistant-preview"><div class="preview-top"><div class="preview-avatar">✦</div><div><strong>Tendai AI</strong><small><span class="online-dot"></span> Ready to help</small></div><span class="preview-more">•••</span></div><div class="preview-chat"><div class="chat-date">YOUR PROJECT, YOUR WAY</div><div class="message bot-message">Hi there! 👋 What are you planning to build, fix or improve today?</div><div class="message user-message">I need to repaint a small house, but I want to keep costs down.</div><div class="message bot-message">We can start with a simple plan. Do you know roughly how many rooms need painting?</div><div class="quick-prompts"><button data-prompt="Help me plan a painting budget">Plan a painting budget</button><button data-prompt="Help me make a building materials list">Make a materials list</button><button data-prompt="I want to compare supplier quotes">Compare supplier quotes</button></div></div><button class="preview-input" id="previewInput"><span>Ask Tendai anything...</span><b>↑</b></button><div class="preview-foot">✦ Tendai can make mistakes. Check important details.</div></div></div></section>
+
+    <section class="section-wrap how-section" id="how-it-works"><div class="section-heading centered-heading"><div><div class="eyebrow">SIMPLE BY DESIGN</div><h2>From idea to order, in 3 steps</h2><p>No guesswork. No pressure. Just a clearer way to source.</p></div></div><div class="steps-grid"><article class="step-card"><div class="step-number">01 <span>→</span></div><div class="step-illustration step-search">⌕</div><h3>Tell us what you need</h3><p>Browse the catalogue, describe your project to Tendai, or send a list of materials you need priced.</p></article><article class="step-card"><div class="step-number">02 <span>→</span></div><div class="step-illustration step-compare">▤</div><h3>Review your options</h3><p>We organise your request and confirm supplier availability, pricing and delivery before you commit.</p></article><article class="step-card"><div class="step-number">03 <span>✓</span></div><div class="step-illustration step-order">✓</div><h3>Confirm your order</h3><p>Approve your quote, agree on payment and delivery, then keep track of your order updates.</p></article></div></section>
+
+    <section class="quote-banner section-wrap"><div class="quote-banner-content"><div class="eyebrow light-eyebrow">BIG PROJECT OR ODD ITEM?</div><h2>One list. One clear quote.</h2><p>Send your materials list and let us help you organise the next steps.</p><button class="button button-lime" id="bannerQuote">Start a quote <span>→</span></button></div><div class="quote-art" aria-hidden="true"><div class="quote-paper"><div class="paper-lines"></div><div class="paper-check">✓</div><div class="paper-lines short"></div><div class="paper-lines"></div><div class="paper-lines medium"></div></div><div class="quote-circle">A<span>&amp;I</span></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="section-wrap footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 40 40"><path d="M5 18.5 20 7l15 11.5v15H5z"/><path d="M14 33V21h12v12M3 18l17-13 17 13"/></svg></span><span class="brand-copy"><strong>Affordable <span>&amp; Instant</span></strong><small>HARDWARE SUPPLIES • AFFORDABLE SOURCING</small></span></a><p>Affordable supplies. Fast sourcing. Smarter buying.</p><div class="footer-links"><a href="#products">Browse products</a><a href="#sourcing" id="footerAi">Ask Tendai AI</a><a href="#how-it-works">How it works</a></div></div><div class="section-wrap footer-bottom"><span>© <span id="year"></span> Affordable & Instant Hardware. Concept website.</span><span>Built to help you make informed buying decisions.</span></div></footer>
+
+  <button class="floating-ai" id="floatingAi" aria-label="Open Tendai AI"><span class="floating-ai-spark">✦</span><span>Ask Tendai AI</span><span class="floating-ai-pulse"></span></button>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="My order list" aria-hidden="true"><div class="drawer-header"><div><small>YOUR SELECTION</small><h2>My order list <span id="drawerCount">(0)</span></h2></div><button class="close-button" data-close aria-label="Close order list">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-empty" id="cartEmpty"><div>▤</div><h3>Your list is empty</h3><p>Add products to build your request.</p><button class="button button-outline" data-close>Explore products</button></div><div class="cart-footer" id="cartFooter" hidden><div class="cart-estimate"><span>Illustrative item total</span><strong id="cartTotal">$0.00</strong></div><small>Final prices, stock and delivery must be confirmed by a supplier.</small><button class="button button-dark full-button" id="requestCartQuote">Request a quote <span>→</span></button><button class="clear-cart" id="clearCart">Clear list</button></div></aside>
+
+  <aside class="ai-drawer" id="aiDrawer" aria-label="Tendai AI assistant" aria-hidden="true"><div class="ai-drawer-header"><div class="ai-drawer-identity"><div class="ai-orb">✦</div><div><strong>Tendai AI</strong><small><span class="online-dot"></span> Your sourcing assistant</small></div></div><button class="close-button" data-close aria-label="Close assistant">×</button></div><div class="ai-drawer-notice">I can help organise your project and prepare quote requests. Product prices and availability must be confirmed.</div><div class="ai-chat-messages" id="aiMessages"><div class="chat-date">LET'S GET STARTED</div><div class="message bot-message">Hi! I'm Tendai, your Affordable & Instant assistant. 👋<br><br>Tell me what you're working on, what product you're looking for, or the budget you're trying to stay within.</div><div class="quick-prompts drawer-prompts"><button data-prompt="Help me plan a building materials budget">Plan my budget</button><button data-prompt="Help me make a materials checklist for a small home project">Make a materials list</button><button data-prompt="What details do you need to request a supplier quote?">Get a supplier quote</button></div></div><form class="ai-input-row" id="aiForm"><textarea id="aiInput" rows="1" placeholder="Describe your project..." aria-label="Message Tendai AI"></textarea><button type="submit" aria-label="Send message">↑</button></form><div class="ai-powered-note">Demo assistant · Connect an AI API for live AI responses</div></aside>
+
+  <div class="modal-backdrop" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="quoteTitle"><div class="quote-modal"><div class="modal-heading"><div><div class="eyebrow">LET'S GET YOUR PROJECT MOVING</div><h2 id="quoteTitle">Request a quote</h2><p>Tell us a little about what you need. We'll prepare a clear request for follow-up.</p></div><button class="close-button" data-close-modal aria-label="Close form">×</button></div><form id="quoteForm" class="quote-form"><label>Your name<input name="name" required placeholder="e.g. Tariro M." autocomplete="name"></label><div class="form-two-col"><label>Phone / WhatsApp<input name="phone" required placeholder="e.g. +263 7..." autocomplete="tel"></label><label>Project location<input name="location" required placeholder="e.g. Harare, Borrowdale"></label></div><label>What do you need?<textarea name="details" id="quoteDetails" rows="4" required placeholder="List products, quantities, sizes or describe your project..."></textarea></label><label>Budget (optional)<input name="budget" placeholder="e.g. $250"></label><div class="form-note">Submitting prepares a message for you to review. No payment is taken on this demo website.</div><button class="button button-dark full-button" type="submit">Prepare my quote request <span>→</span></button><div id="quoteSuccess" class="quote-success" hidden></div></form></div></div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
